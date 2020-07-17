@@ -1,0 +1,285 @@
+@import "__default.css";
+
+.navbar{
+    padding: 15px 0;
+    background-color: #f6fafc;
+
+    .navbar-brand{
+        img{
+
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: #2D3950;
+                font-size: 17px;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding-left: 20px;
+                transition: all 0.5s ease;
+                &:hover{
+                    color: #15A4FA;
+                }
+            }
+        }
+    }
+}
+
+.banner-section{
+    background-image: url(../images/Strict.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    .banner-content{
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translatey(-50%);
+        color: white;
+        h1{
+            font-size: 80px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+        }
+        span{
+            background-color: #15A4FA;
+            height: 2px;
+            display: block;
+            margin: 20px 0;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+.btn-custom{
+    color: white;
+    border: 1px solid #15A4FA;
+    transition: all 0.5s ease;
+    padding: 10px 25px;
+    font-size: 20px;
+    &:hover{
+        background-color: #15A4FA;
+    }
+}
+
+.design-section{
+    text-align: center;
+    padding: 50px 0;
+    h1{
+        font-weight: 500;
+        margin-bottom: 0;
+        color: #2D3950;
+    }
+    p{
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 1.7;
+        margin: 25px 0;
+    }
+    .content{
+        .service{
+            .icon{
+                text-align: center;
+                line-height: 80px;
+                font-size: 40px;
+                width: 80px;
+                color: white;
+                height: 80px;
+                margin: auto;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#207cca+49,2989d8+50,1e5799+50,7db9e8+50 */
+background: #207cca; /* Old browsers */
+background: -moz-linear-gradient(left,  #207cca 49%, #2989d8 50%, #1e5799 50%, #7db9e8 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #207cca 49%,#2989d8 50%,#1e5799 50%,#7db9e8 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #207cca 49%,#2989d8 50%,#1e5799 50%,#7db9e8 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+                i{
+                    text-shadow: 1px 2px 1px #2D3950;
+                }
+            }
+        }
+        h2{
+            color: #2D3950;
+            font-size: 31px;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        p{
+            color: #2d3950d4;
+        }
+    }
+}
+
+.showcase-section{
+    h2{
+        
+    }
+    p{
+        margin-bottom: 0;
+    }
+    img{
+        border-radius: 5px;
+    }
+}
+
+.form-section{
+    background-image: url(../images/contact.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: #2D3950;
+
+    h2{
+
+    }
+    p{
+
+    }
+    .form-control{
+        background-color: transparent;
+    }
+    .form-check-input {
+        position: absolute;
+        margin-top: .8rem;
+        margin-left: -1.25rem;
+        height: 18px;
+        width: 18px;
+    }
+    .form-check-label {
+        margin-bottom: 0;
+        margin-top: 5px;
+        padding-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .btn-cus{
+        color: white;
+        border: 1px solid #15A4FA;
+        font-weight: 600;
+        transition: all 0.5s ease;
+        padding: 5px 25px;
+        &:hover{
+            background-color: #15A4FA;
+        }
+    }
+}
+
+footer{
+    background-color: F6FAFC;
+    padding: 30px 0;
+    p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    i{
+        font-size: 30px;
+        color: #15A4FA;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1199px){
+
+}
+@media (max-width: 991px){
+    .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .banner-section .banner-content h1 {
+        font-size: 50px;
+    }
+    .banner-section .banner-content p {
+        font-size: 18px;
+    }
+    .btn-custom {
+        padding: 5px 15px;
+    }
+    .design-section h1 {
+        font-size: 30px;
+    }
+    .design-section p {
+        font-size: 16px;
+    }
+    .design-section .content h2 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .design-section p {
+        font-size: 15px;
+    }
+    .design-section .content .service .icon {
+        font-size: 30px;
+    }
+    .design-section .content .service .icon {
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+    }
+    .showcase h2{
+        font-size: 30px;
+    }
+    .showcase img{
+        max-width: 180px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .navbar-nav {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-section .banner-content h1 {
+        font-size: 40px;
+    }
+    .btn-custom {
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    .design-section h1 {
+        font-size: 28px;
+    }
+    .design-section p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .showcase h2{
+        font-size: 25px;
+    }
+    .showcase img{
+        max-width: 160px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+    footer i {
+        font-size: 22px;
+        padding: 0 3px;
+    }
+    .form-section .form-check-input {
+        margin-top: .5rem;
+    }
+    .form-section .form-check-label {
+        font-size: 13px;
+    }
+    
+}
+
+
+@media (max-width: 575px){
+    
+}
